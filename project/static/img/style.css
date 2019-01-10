@@ -1,0 +1,180 @@
+
+
+/* Introduction Background
+--------------------------------*/
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("background-building.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  #intro {
+    background-attachment: fixed;
+  }
+}
+
+
+/* Future Prediction Introduction Section
+--------------------------------*/
+#future-prediction-introduction {
+  overflow: hidden;
+  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(galaxy-wow.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#future-prediction-introduction .fpi-title {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  bottom: 0px;
+}
+
+#future-prediction-introduction .fpi-text {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  top: 0px;
+}
+
+/* Other Bits Introduction Section
+--------------------------------*/
+#other-bits {
+  overflow: hidden;
+  background-color:#eff5f5
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#other-bits .ob-title {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  bottom: 0px;
+}
+
+#other-bits .ob-text {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  top: 0px;
+}
+
+/* --------other bits--------*/
+
+.hb-box .col{
+  height: 400px;
+  text-align: center;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  margin: 0;
+  top: 50%;
+}
+
+.hb-box .hb-box-train{
+  /*background-color: rgb(82, 210, 188);*/
+  background: linear-gradient(rgba(72,36,2165, 0.65), rgba(29, 205, 89, 0.2)), url(img/box-tunnel.jpg) center center;
+}
+
+.hb-box .hb-box-train:hover{
+  background: linear-gradient(rgba(72,36,2165, 0.65), rgba(29, 205, 89, 0.2)), url() center center;
+  }
+
+.hb-box .hb-box-shop{
+  background: linear-gradient(rgba(29, 200, 20, 0.65), rgba(29, 205, 89, 0.2)), url(img/box-shopping.jpg) center center;
+}
+.hb-box .hb-box-shop:hover{
+  background: linear-gradient(rgba(29, 200, 20, 0.65), rgba(29, 205, 89, 0.2)), url() center center;
+}
+
+
+.hb-box .hb-box-coffee{
+  background: linear-gradient(rgba(216, 159, 36, 0.65), rgba(29, 205, 89, 0.2)), url(img/box-dinner.jpg) center center;
+}
+
+.hb-box .hb-box-coffee:hover{
+  background: linear-gradient(rgba(216, 159, 36, 0.65), rgba(29, 205, 89, 0.2)), url() center center;
+}
+
+.hb-box .hb-box-medical{
+ background: linear-gradient(rgba(242, 225, 43, 0.65), rgba(29, 205, 89, 0.2)), url(img/box-medical.jpg) center center;
+}
+.hb-box .hb-box-medical:hover{
+ background: linear-gradient(rgba(242, 225, 43, 0.65), rgba(29, 205, 89, 0.2)), url() center center;
+}
+
+.hb-box .hb-box-school{
+ background: linear-gradient(rgba(242, 43, 182, 0.65), rgba(29, 205, 89, 0.2)), url(img/box-school.jpg) center center;
+}
+.hb-box .hb-box-school:hover{
+ background: linear-gradient(rgba(242, 43, 182, 0.65), rgba(29, 205, 89, 0.2)), url() center center;
+}
+
+.hb-box .hb-box-bar{
+ background: linear-gradient(rgba(242, 73, 43, 0.65), rgba(29, 205, 89, 0.2)), url(img/box-bar.jpg) center center;
+}
+.hb-box .hb-box-bar:hover{
+ background: linear-gradient(rgba(242, 73, 43, 0.65), rgba(29, 205, 89, 0.2)), url() center center;
+}
+
+.hb-box .col .hb-hover { display: none; }
+.hb-box .col:hover .hb-hover { display: block; }
+
+.hb-box .col .hb-non-hover { display: block; }
+.hb-box .col:hover .hb-non-hover { display: none; }
+
+.hb-box ul { padding-left: 0; font-size: 1.4em; }
+.hb-box li {
+  list-style-type: none;
+}
+
+.intro-text {
+  font-size: 3em;
+}
+
+.intro-price {
+  font-size: 9em;
+}
+
+
+/* Future Prediction Introduction
+--------------------------------*/
+
+
+
+/* Introduction Text
+
+
+#intro h2.intro-text{
+  height: calc(80% - 60px);
+  text-align: center;
+  flex-direction: column;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  font-weight: 50;
+  font-size: 25px;
+}
+--------------------------------*/
+
+/* Introduction Price Display
+
+
+#intro h3.intro-price{
+  height: calc(110% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  font-weight: 30;
+  font-size: 130px;
+}
+--------------------------------*/

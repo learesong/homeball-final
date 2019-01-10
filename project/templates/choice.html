@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="d-flex flex-column justify-content-center choice" style="height: 100%">
+
+  <div class="container">
+
+    <h2 class="text-center">Just 3 pieces of info <br> and we are ready...</h2>
+
+    <form action="result" method="post">
+      <input type="hidden" name="postcode" value={{postcode}} id="postcode" />
+      <input type="hidden" name="location" value={{location}} id="location" />
+      <input type="hidden" name="station_dist" value={{station_dist}} id="station_dist" />
+
+      <div class="row no-gutters hb-box-margin">
+
+        <div class="col">
+          <div class="card shadow" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">1. What type of home?</h5>
+              <div class="form-group">
+                <select class="form-control" name="type">
+                  <option value="" disabled selected hidden>Please choose--</option>
+                  <option value="D">Detached (London property fantasy)</option>
+                  <option value="S">Semi-detached (Half-free from the neighbours)</option>
+                  <option value="T">Terraced (It could be worse)</option>
+                  <option value="F">Flat (There's no escape)</option>
+                </select>
+              </div>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">2. Number of bedrooms?</h5>
+              <div class="form-group">
+                <select class="form-control" name="bedrooms">
+                  <option value="" disabled selected hidden>Please choose--</option>
+                  <option value="0">Studio</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">More than 6 (seriously?)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">3. Old or New?</h5>
+              <div class="form-group">
+                <select class="form-control" name="state">
+                  <option value="" disabled selected hidden>Please choose--</option>
+                  <option value="O">Old but charming</option>
+                  <option value="N">New and fancy</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div><!-- /row -->
+
+    <div class="d-flex justify-content-center roll-button">
+      <button type="submit" class="btn hb-button-color">Let's roll</button>
+    </div>
+
+    </form>
+
+  </div> <!-- /container -->
+
+</div> <!-- / -->
+
+{% endblock %}

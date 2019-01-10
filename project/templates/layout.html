@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homeball - Start Bootstrap Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css' )}}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css' )}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css' )}}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/stylish-portfolio.min.css' )}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/homeball.css' )}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/result.css' )}}" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="/">HOMEBALL</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/map">Get started</a>
+        </li>
+        <!-- <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Team</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Credits</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li> -->
+      </ul>
+    </nav>
+
+    <!-- child template -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- {{ url_for('static', filename='js/homeball_1.js' )}} -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js' )}}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js' )}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js' )}}"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaKaZGr8pvM2-sCitY_2tIfaCX90o6t0w&callback=initMap"
+    async defer></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/stylish-portfolio.min.js' )}}"></script>
+    <script src="{{ url_for('static', filename='js/homeball_1.js' )}}"></script>
+
+  </body>
+
+</html>

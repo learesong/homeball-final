@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!--Experiment -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-lg-7 my-auto">
+        <div class="header-content mx-auto">
+          <h1 class="mb-5">Predict the price of your home in just 5 simple steps</h1>
+          <a href="/map" class="btn btn-outline btn-xl js-scroll-trigger">Click to Start!</a>
+        </div>
+      </div>
+      <div class="col-lg-5 my-auto">
+        <img class="site-logo" src="{{ url_for('static', filename='img/homeball_logo_grey_opaque.png' )}}" class="img-logo" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+
+{% endblock %}

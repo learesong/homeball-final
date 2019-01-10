@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- Price Information -->
+<section id="intro" class="d-flex flex-column justify-content-center align-items-center">
+   <h2 class="intro-text">Your Home is worth </h2>
+   <h3 class="intro-price">{{price}}</h3>
+</section>
+
+
+<!--==========================
+   Future Prediction Introduction
+ ============================-->
+
+ <section id="future-prediction-introduction">
+
+   <div>
+         <h2 class="fpi-title">The Future</h2>
+         <p class="fpi-text">Our crystal ball (or in this case homeball) tells us that </br> your house price in the next 5 years will be ... </p>
+     </div>
+
+ </section>
+
+   <!--==========================
+   Other Bits Introduction
+ ============================-->
+
+ <section id="other-bits">
+
+   <div>
+         <h2 class="ob-title">Other Bits</h2>
+         <p class="ob-text">Hover on the icons to find out the nearest amneties </p>
+     </div>
+
+ </section>
+
+
+<!--==========================
+   Other bits
+ ============================-->
+ <div class="container-fluid hb-box">
+   <div class="row">
+     <div class="col d-flex align-items-center justify-content-center hb-box-train">
+       <div class="hb-non-hover">
+         <i class="fas fa-subway fa-7x" style="color: white"></i>
+       </div>
+       <div class="hb-hover">
+         <p>These are your nearest tube stations:</p>
+         <ul>
+           {% for place in extras['subway_stations'] %}
+             <li>{{ place.name }} ({{ place.distance }}m)</li>
+           {% endfor %}
+         </ul>
+
+         <p>And nearest train stations:</p>
+         <ul>
+           {% for place in extras['train_stations'] %}
+             <li>{{ place.name }} ({{ place.distance }}m)</li>
+           {% endfor %}
+         </ul>
+       </div>
+     </div>
+
+     <div class="col d-flex align-items-center justify-content-center hb-box-shop">
+       <div class="hb-non-hover">
+         <i class="fas fa-shopping-cart fa-7x" style="color: white"></i>
+       </div>
+       <div class="hb-hover">
+           <p>These are your nearest supermarkets:</p>
+           <ul>
+             {% for place in extras['supermarkets'] %}
+               <li>{{ place.name }} ({{ place.distance }}m)</li>
+             {% endfor %}
+           </ul>
+       </div>
+     </div>
+
+     <div class="col d-flex align-items-center justify-content-center hb-box-coffee">
+        <div class="hb-non-hover">
+          <i class="fas fa-utensils fa-7x" style="color: white"></i>
+          <i class="fas fa-coffee fa-7x" style="color: white"></i>
+        </div>
+        <div class="hb-hover">
+          <p>These are your nearest cafes:</p>
+          <ul>
+            {% for place in extras['cafes'] %}
+              <li>{{ place.name }} ({{ place.distance }}m)</li>
+            {% endfor %}
+          </ul>
+
+          <p>And nearest restaurants:</p>
+          <ul>
+            {% for place in extras['restaurants'] %}
+              <li>{{ place.name }} ({{ place.distance }}m)</li>
+            {% endfor %}
+          </ul>
+        </div>
+     </div>
+   </div>
+
+   <div class="row">
+     <div class="col d-flex align-items-center justify-content-center hb-box-medical">
+       <div class="hb-non-hover">
+         <i class="fas fa-briefcase-medical fa-7x" style="color: white"></i>
+       </div>
+       <div class="hb-hover">
+         <p>These are your nearest hospitals:</p>
+         <ul>
+           {% for place in extras['hospitals'] %}
+             <li>{{ place.name }} ({{ place.distance }}m)</li>
+           {% endfor %}
+         </ul>
+
+         <p>And nearest train dentists:</p>
+         <ul>
+           {% for place in extras['dentists'] %}
+             <li>{{ place.name }} ({{ place.distance }}m)</li>
+           {% endfor %}
+         </ul>
+       </div>
+     </div>
+
+     <div class="col d-flex align-items-center justify-content-center hb-box-school">
+       <div class="hb-non-hover">
+           <i class="fas fa-chalkboard-teacher fa-7x" style="color: white"></i>
+           <i class="fas fa-paw fa-7x" style="color: white"></i>
+       </div>
+       <div class="hb-hover">
+         <p>These are your nearest schools:</p>
+         <ul>
+           {% for place in extras['schools'] %}
+             <li>{{ place.name }} ({{ place.distance }}m)</li>
+           {% endfor %}
+         </ul>
+       </div>
+     </div>
+
+     <div class="col d-flex align-items-center justify-content-center hb-box-bar">
+        <div class="hb-non-hover">
+           <i class="fas fa-cocktail fa-7x" style="color: white"></i>
+        </div>
+        <div class="hb-hover">
+          <p>These are your nearest bars:</p>
+          <ul>
+            {% for place in extras['bars'] %}
+              <li>{{ place.name }} ({{ place.distance }}m)</li>
+            {% endfor %}
+          </ul>
+        </div>
+     </div>
+ </div>
+
+{% endblock %}
